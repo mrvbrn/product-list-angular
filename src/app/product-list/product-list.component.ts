@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
   pageTitle: string = 'Product List';
+  imageWidth: number = 50;
+  imageMargin: number = 2;
   products: any[] = [
     {
       productId: 2,
@@ -16,7 +18,8 @@ export class ProductListComponent implements OnInit {
       description: '15 gallon capacity rolling',
       price: '32.99',
       starRating: '4.2',
-      imageUrl: 'assests/images/garden_cart.png'
+      imageUrl:
+        'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ-d4hJsrnWnCvYp2uuLIXV1dIl7DgHg_vCqBREhvGssvyvGeTb1nMsZqv8A_UZF9-spfg0_ji-pA&usqp=CAc'
     },
     {
       productId: 5,
@@ -26,7 +29,8 @@ export class ProductListComponent implements OnInit {
       description: 'Curved claw steel hammer',
       price: '8.9',
       starRating: '4.8',
-      imageUrl: 'assests/images/hammer.png'
+      imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NRASvujB2TBTK4Mog9uyWyegKkuiN53wzNVWKwwKfzvBOj6QANkajBcpILpyrdZ9RK_b5YI&usqp=CAc'
     }
   ];
 

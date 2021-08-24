@@ -1,9 +1,9 @@
 <div>
   <h1>{{pageTitle}}</h1>
   <label>Filter </label>
-  <input type='text'>
+  <input type="text" />
   <div>
-    <table class="table" *ngIf='products.length'>
+    <table class="table" *ngIf="products.length">
       <thead>
         <tr>
           <th>
@@ -17,8 +17,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor='let product of products'>
-          <td></td>
+        <tr *ngFor="let product of products">
+          <td>
+            <img
+              [src]="product.imageUrl"
+              [title]="product.productName"
+              [style.width.px]="imageWidth"
+              [style.margin.px]="imageMargin"
+            />
+          </td>
           <td>{{product.productName}}</td>
           <td>{{product.productCode}}</td>
           <td>{{product.releaseDay}}</td>
